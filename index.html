@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Essay Splitter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Binary Converter</h1>
-        
-        <div class="toggle-container">
-            <button id="toggle-ipv4" class="toggle-button active" onclick="setConversionType('ipv4')">Binary to IPv4</button>
-            <button id="toggle-ipv6" class="toggle-button" onclick="setConversionType('ipv6')">Binary to IPv6</button>
-            <button id="toggle-binary-ip" class="toggle-button" onclick="setConversionType('binary-ip')">IP to Binary</button>
-            <button id="toggle-text" class="toggle-button" onclick="setConversionType('text')">Binary to Text</button>
-        </div>
 
-        <input type="text" id="binary-input" placeholder="Enter binary string or IP address">
-        <button onclick="convertBinary()">Convert</button>
-        <p id="result"></p>
-    </div>
+<h1>Essay Splitter</h1>
+<p>Paste your essay below and click "Split Essay" to divide it into chunks of 450 words each.</p>
 
-    <script src="scripts.js"></script>
+<textarea id="essayInput" placeholder="Paste your essay here..."></textarea>
+<br>
+<button onclick="splitEssay()">Split Essay</button>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
