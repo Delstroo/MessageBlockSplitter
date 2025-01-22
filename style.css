@@ -1,79 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    line-height: 1.6;
 }
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.toggle-button {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #ddd;
-    color: #333;
-    transition: background-color 0.3s;
-}
-
-.toggle-button.active {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-.toggle-button:hover {
-    background-color: #0056b3;
-    color: #fff;
-}
-
-input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    display: block;
+textarea {
     width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    height: 150px;
+    margin-bottom: 10px;
 }
-
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
 button:hover {
+    background-color: #45a049;
+}
+.chunk {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.copy-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.copy-btn:hover {
     background-color: #0056b3;
 }
-
-p {
-    margin: 10px 0;
-    color: #333;
-    text-align: center;
+.part-number {
+    font-weight: bold;
+    margin-top: 10px;
 }
